@@ -1202,6 +1202,17 @@ ul.portfolio li.active {
     font-size: 14px;
 }
 
+.last {
+  background: #1F1C3F;
+  color: white;
+  font-size: 14px;
+}
+
+.im{
+  vertical-align:bottom;
+  border:0;
+}
+
 
 
 /* Scroll To Top */
