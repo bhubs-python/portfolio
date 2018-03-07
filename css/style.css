@@ -47,7 +47,7 @@ body {
     line-height: 24px;
     letter-spacing: 1px;
     height: 100%;
-    font-family: 'Philosopher', sans-serif;
+    font-family: 'Poppins', sans-serif;
 }
 
 html,
@@ -71,7 +71,7 @@ h3,
 h4,
 h5,
 h6 {
-	font-family: 'Philosopher', sans-serif;
+	font-family: 'Poppins', sans-serif;
 }
 
 a {
@@ -278,14 +278,14 @@ fieldset {
     position: absolute;
     top: 40%;
     left: 40%;
-    background-color: #1F1C3F;
+    background-color: green;
     animation: squaremove 1s ease-in-out infinite;
     -webkit-animation: squaremove 1s ease-in-out infinite;
 }
 
 .preloader:after {
     bottom: 0px;
-    background-color: #D35400;
+    background-color: green;
     animation-delay: 0.3s;
 }
 
@@ -714,7 +714,7 @@ tr > td:nth-child(2) {
 
 .portfolio-inner .mix {
     display: none;
-	padding: 0px;
+	 padding: 0px;
 }
 
 ul.portfolio {
@@ -812,7 +812,6 @@ ul.portfolio li.active {
 .mfp-zoom-out-cur, .mfp-zoom-out-cur .mfp-image-holder .mfp-close {
     cursor: inherit;
 }
-
 
 
 /* Testimonial */
@@ -1218,7 +1217,7 @@ ul.portfolio li.active {
 /* Scroll To Top */
 
 .scroll-to-top {
-    background-color: #1F1C3F;
+    background-color: #5C6BC0;
     display: none;
     width: 60px;
     height: 60px;
