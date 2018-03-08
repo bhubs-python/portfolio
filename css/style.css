@@ -48,6 +48,7 @@ body {
     letter-spacing: 1px;
     height: 100%;
     font-family: 'Poppins', sans-serif;
+    overflow-x: hidden;
 }
 
 html,
@@ -278,14 +279,14 @@ fieldset {
     position: absolute;
     top: 40%;
     left: 40%;
-    background-color: green;
+    background-color: #1F1C3F;
     animation: squaremove 1s ease-in-out infinite;
     -webkit-animation: squaremove 1s ease-in-out infinite;
 }
 
 .preloader:after {
     bottom: 0px;
-    background-color: green;
+    background-color: #D35400;
     animation-delay: 0.3s;
 }
 
