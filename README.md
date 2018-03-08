@@ -1,4 +1,4 @@
-# portfolio
+# Portfolio
 
 Live Demo: https://bhubs-python.github.io/portfolio/
 
