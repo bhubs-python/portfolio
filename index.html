@@ -22,11 +22,10 @@
     <link rel="shortcut icon" href="images/favicon/favicon.ico">
     <link rel="apple-touch-icon" sizes="144x144" type="image/x-icon" href="images/favicon/apple-touch-icon.png">
 
-    <!-- All CSS Plugins -->
+    <!-- All CSS Plugins --> 
     <link rel="stylesheet" type="text/css" href="css/plugin.css">
 
     <!-- Main CSS Stylesheet -->
-    <link rel="stylesheet" type="text/css" href="css/carousel.css">
     <link rel="stylesheet" type="text/css" href="css/style.css">
 
     <!-- Google Web Fonts  -->
@@ -106,50 +105,35 @@
 
      <!-- Home Section Start  -->
 
-    <section class="home-section" style="background: black">
-            <div class="container">
+    <section class="home-section">
+        <div class="container">
             <div class="row">
-                <noscript>You must enable javascript to see this page.</noscript>
-                <div id="wrap">
-                    <h1>Welcome to BHubs</h1>
-
-                    <div id="showcase" class="noselect">
-                        <div class="card">
-                            <img  src="images/carousel/hosting.png" alt="http://bhubs.com" class="reflect">
-                            <p>Domain and Hosting</p>
+                <div id="myCarousel" class="carousel slide" data-ride="carousel">
+                    <ol class="carousel-indicators">
+                        <li data-target="#myCarousel" data-slide-to="0" class="active"></li>
+                        <li data-target="#myCarousel" data-slide-to="1"></li>
+                        <li data-target="#myCarousel" data-slide-to="2"></li>
+                    </ol>
+                    <div class="carousel-inner">
+                        <div class="item active">
+                          <img src="images/slider/1.jpg" alt="">
                         </div>
-                        <div class="card">
-                            <img  src="images/carousel/software.png" alt="http://bhubs.com" class="reflect">
-                            <p>Software Firm</p>
+                        <div class="item">
+                          <img src="images/slider/2.jpg" alt="">
                         </div>
-                        <div class="card">
-                            <img  src="images/carousel/support.png" alt="http://bhubs.com" class="reflect">
-                            <p>Support Center</p>
-                        </div>
-                        <div class="card">
-                            <img  src="images/carousel/blog.png" alt="http://bhubs.com" class="reflect">
-                            <p>Blog</p>
-                        </div>
-                        <div class="card">
-                            <img  src="images/carousel/forum.png" alt="http://bhubs.com" class="reflect">
-                            <p>Forum</p>
-                        </div>
-                        <div class="card">
-                            <img  src="images/carousel/media.png" alt="http://bhubs.com" class="reflect">
-                            <p>Design and Media</p>
+                        <div class="item">
+                          <img src="images/slider/3.jpg" alt="">
                         </div>
                     </div>
-                    <footer>
-                        <a id="item-title" href="#">&nbsp;</a>
-                        <div id="nav" class="noselect">
-                            <button class="left">
-                                ←
-                            </button>
-                            <button class="right">
-                                →
-                            </button>
-                        </div>
-                    </footer>
+
+                    <a class="left carousel-control" href="#myCarousel" data-slide="prev">
+                        <i class="glyphicon glyphicon-chevron-left"></i>
+                        <span class="sr-only">Previous</span>
+                    </a>
+                    <a class="right carousel-control" href="#myCarousel" data-slide="next">
+                        <i class="glyphicon glyphicon-chevron-right"></i>
+                        <span class="sr-only">Next</span>
+                    </a>
                 </div>
             </div>
         </div>
@@ -715,16 +699,19 @@
 
 
     <!-- All Javascript Plugins  -->
-    <script type="text/javascript" src="js/lib/nmcbd.carousel3d.min.js"></script>
     <script type="text/javascript" src="js/jquery.min.js"></script>
     <script type="text/javascript" src="js/plugin.js"></script>
 
     <!-- Main Javascript File  -->
     <script type="text/javascript" src="js/scripts.js"></script>
-    <!-- <script type="text/javascript" src="js/lib/jscripts.js"></script>
-    <script type="text/javascript" src="js/lib/jquery.cloud9carousel.js"></script>
-    <script type="text/javascript" src="js/lib/jquery.js"></script>
-    <script type="text/javascript" src="js/lib/jquery.reflection(1).js"></script>
-    <script type="text/javascript" src="js/lib/jquery.reflection.js"></script> -->
+    <script type="text/javascript">
+        $('.carousel').carousel({
+            interval: 2000,
+            keyboard: true,
+            pause: 'hover',
+            wrap: true,
+    })
+    </script>
+
   </body>
  </html>
